@@ -1,0 +1,71 @@
+
+<!--
+    
+Creado por: Cristian M. Veliz Cano
+Nombre del Proyecto: Locker-Pro (Ejemplo)
+Gituhub: https://github.com/Speedtige
+📧 Email: cristianvel2015mvc@gmail.com
+
+===========================================================
+Locker-Pro es un proyecto demostrativo enfocado en la reproducción de videos cortos mediante una interfaz web simple, construido utilizando HTML, CSS y JavaScript.
+
+Este proyecto presenta una galería dinámica de contenido donde los usuarios pueden visualizar videos desde distintas fuentes externas como Cloudinary, YouTube, Google Drive y MEGA, permitiendo comprender cómo integrar múltiples servicios de reproducción en una sola aplicación.
+
+Su objetivo principal es servir como una base práctica para desarrolladores que desean aprender sobre:
+
+Renderizado dinámico de contenido mediante JavaScript
+Creación de interfaces tipo galería (grid)
+Implementación de reproductores de video personalizados
+Detección y adaptación de diferentes formatos de video
+Interacción del usuario mediante eventos
+
+Locker-Pro está diseñado como un proyecto ligero y funcional que puede ser desplegado en entornos estáticos como GitHub Pages, sin necesidad de backend.
+
+Este proyecto puede ser extendido fácilmente para incluir nuevas funcionalidades como listas dinámicas, bases de datos, autenticación de usuarios o sistemas de recomendación.
+
+Locker-Pro no es solo un visor de videos, sino una base adaptable para el desarrollo de plataformas multimedia modernas.
+===========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locker-Pro</title>
+<link rel="icon" type="favicon.ico" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>🎬 Locker-Pro</h1>
+</header>
+
+<section class="hero">
+    <img src="ima/1.png" alt="Locker-Pro Banner">
+    <div class="hero-text">
+        <h2>Bienvenido a Locker-Pro</h2>
+        <p>Disfruta cientos de videos cortos estilo anime</p>
+        <p>Este es solamente, un Ejemplo de cromo creal algo.</p>
+    </div>
+</section>
+
+<main>
+    <div id="grid" class="grid"></div>
+</main>
+
+<!-- PLAYER -->
+<div id="player" class="player hidden">
+    <div id="playerContent"></div>
+
+    <div class="controls">
+    <button id="play">▶</button>
+    <button id="close">✖</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
