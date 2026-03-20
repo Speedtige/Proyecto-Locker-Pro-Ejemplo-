@@ -1601,11 +1601,14 @@ function openPlayer(src){
 
     if(videoData.type === "video"){
         playerContent.innerHTML = `
-        <video id="video" controls preload="metadata">
+        <video id="video" controls controlsList="nodownload noplaybackrate noremoteplayback" preload="metadata">
             <source src="${videoData.src}" type="video/mp4">
         </video>`;
         
         currentVideo = document.getElementById("video");
+
+        // 🚫 Bloquear clic derecho
+		currentVideo.addEventListener("contextmenu", e => e.preventDefault());
 
     }else{
         playerContent.innerHTML = `
